@@ -4,4 +4,5 @@ module.exports = app => {
 			Tarefas.findAll({},(retorno)=>
 							{res.json({tarefas: retorno})});
 	});
+	
 };
