@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Adailton M. Lima",
+  "license": "UFPA",
   "dependencies": {
     "express": "^4.17.1",
     "consign": "^0.1.6"
