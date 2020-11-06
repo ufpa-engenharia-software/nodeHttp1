@@ -7,5 +7,6 @@ module.exports = app => {
 								res.json({alunos: retorno})
 							}
 			);
-	});	
+	}
+	);	
 };
