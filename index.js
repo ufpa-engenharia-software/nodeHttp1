@@ -2,6 +2,7 @@
 const express = require('express');
 const consign = require('consign');
 
+
 //inicializa a aplicacao com express
 const app = express();
 

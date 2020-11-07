@@ -1,3 +1,5 @@
+const bodyParser = require('body-parser')
+
 module.exports = app => {
 	const Tarefas = app.models.tarefas;
 	
@@ -5,11 +7,12 @@ module.exports = app => {
 			Tarefas.findAll({},(retorno)=>
 							{res.json({tarefas: retorno})});
 	});
-	
-	app.post("/tarefas", function(req, res) {
-			
-			var nome = req.nome;
- 			var idAluno = req.idAluno;
+	// create application/json parser
+	var jsonParser = bodyParser.json()
+	app.post("/tarefas", jsonParser, function(req, res) {
+		
+			var nome = req.body.nome
+ 			var idAluno = req.body.idAluno;
 
 			res.json(
 				{
