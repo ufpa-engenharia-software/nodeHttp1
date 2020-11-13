@@ -1,5 +1,4 @@
 const bodyParser = require('body-parser')
-
 module.exports = app => {
 	const Tarefas = app.models.tarefas;
 	
@@ -21,5 +20,4 @@ module.exports = app => {
 				}
 			)
 	});
-
 };
